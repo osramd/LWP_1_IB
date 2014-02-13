@@ -227,8 +227,8 @@ public class LiveWallpaper extends WallpaperService
 			screen_width=c.getWidth();
 			screen_height=c.getHeight();
 			
-			//add new cloud
-			if(new_cloud_iteration > 50+(int)(Math.random()*1000%100) )
+			//add new cloud - increase number to decrease frequency of clouds milliseconds
+			if(new_cloud_iteration > 300+(int)(Math.random()*1000%100) )
 			{
 				clouds.add(new Cloud((int)(Math.random()*1000%screen_width),0));
 				new_cloud_iteration=0;
